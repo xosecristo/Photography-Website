@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --primary: #836FFD;
+}
+body{
+    background: url("/assets/img/bg.png") repeat;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+header{
+    width: 100%;
+    line-height: 8rem;
+    padding: 0 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    color: var(--primary);
+}
+header a{
+    color: #000;
+    margin-right: 2.5rem;
+}
+nav a.here{
+    font-weight: bold;
+}
+
+.btn{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+}
+.btn.primary{
+    min-width: 15rem;
+    background: var(--primary);
+    color: #fff;
+}
+
+section{
+    height: 70vh;
+}
+section .accent{
+    color: var(--primary);
+}
+
+.hero{
+    background: #fff url("/assets/img/hero-bg.jpg") no-repeat right bottom;
+    background-size: 60%;
+    padding: 10vh 4vw;
+}
+.hero.no-bg{
+    background: #fff;
+}
+.hero .hero-content{
+    width: 50%;
+}
+.hero h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5rem;
+    line-height: 5rem;
+}
+.hero p{
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+
+section.testimonials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+}
+.customer-photo{
+    border-radius: 100%;
+}
+.customer-name{
+    color: var(--primary);
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    opacity: 1;
+    margin: 1rem 0;
+}
+.customer-text{
+    width: 15vw;
+    text-align: center;
+    opacity: 0.75;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    margin: 1rem 0;
+}
+
+section.samples{
+    background: #fff;
+    height: 100%;
+}
+
+.samples .previews{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 4vw;
+}
